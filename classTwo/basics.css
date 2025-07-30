@@ -1,0 +1,18 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+/* class highlight bgcolor and padding*/
+.highlight{
+    background-color: beige;
+    padding: 50px;
+}
+/* id special change border and margin*/
+#special{
+    border:10px solid red;
+    margin: 30px;
+}
+
+

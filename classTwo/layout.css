@@ -1,0 +1,19 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+.top-bar{
+  
+    position:fixed;
+    width: 100%;    
+    background-color: rgb(142, 100, 36);
+    color: darkgray;
+    margin-top: -80px;
+    padding-top: 20px;
+    /* z-index: 2; */
+}
+.main-content{
+    max-width: 900px;
+    margin:10%;
+    background-color: aqua;
+}
