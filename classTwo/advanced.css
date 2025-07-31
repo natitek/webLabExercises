@@ -1,0 +1,35 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+}
+.main p{
+    color: blue;
+}
+.main > h2 {
+    color: red;
+    position: relative;
+}
+
+h2::before{
+    content: "*";
+    color: aqua;
+}
+.lead ~ p{
+    word-spacing: 10px;
+}
+
+div > span:hover{
+    font-weight: bold;
+    color: red;
+}
+
+input[type="text"]{
+    border: 3px solid red;
+    padding: 10px;
+}
+
+
+input[type="password"]:focus{
+    border: 3px solid black;
+    padding: 10px;
+}
