@@ -1,0 +1,17 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
+    background-color:beige;
+}
+.dropdown-content > *{
+   
+    padding: 10px;
+    margin: 10px;
+}
+
+a:hover{
+    font-weight: bold;
+}
+a:visited{
+    color: brown;
+}
