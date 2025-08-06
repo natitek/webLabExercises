@@ -1,0 +1,31 @@
+/* *{
+    border: 1px solid red;
+} */
+.content-container{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100vh;
+    /* padding:50px; */
+
+    /* border: solid 5px red; */
+}
+.article{
+    flex-basis: 60%;
+    flex-grow: 2;
+     height: 100%;
+}
+.sidebar{
+    flex-shrink: 0;
+    background-color: lightgreen;
+    width: 20%;
+     height: 100%;
+}
+.ads{
+    flex-grow: 1;
+    background-color: lightcoral;
+     height: 100%;
+     width: 200px;
+     /* min-width: 100px;   */
+}
