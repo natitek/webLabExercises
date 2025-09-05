@@ -12,7 +12,7 @@ export default async function handler(req, res) {
       }
     }
 
-    const response = await fetch("ledgerpro.free.nf/sign_up.php", {
+    const response = await fetch("https://ledgerpro.free.nf/sign_up.php", {
       method: req.method,
       headers: {
         "Content-Type": req.headers["content-type"] || "application/x-www-form-urlencoded"
