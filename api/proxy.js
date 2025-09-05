@@ -1,17 +1,26 @@
 export default async function handler(req, res) {
   try {
-    // Forward request to your InfinityFree PHP backend
+    let body;
+
+    if (req.method === "POST") {
+      // Ensure request body is properly serialized
+      if (req.headers["content-type"]?.includes("application/json")) {
+        body = JSON.stringify(req.body);
+      } else {
+        // Default to form-urlencoded
+        body = new URLSearchParams(req.body).toString();
+      }
+    }
+
     const response = await fetch("ledgerpro.free.nf/sign_up.php", {
       method: req.method,
       headers: {
         "Content-Type": req.headers["content-type"] || "application/x-www-form-urlencoded"
       },
-      body: req.method === "POST" ? req.body : undefined
+      body
     });
 
     const text = await response.text();
-
-    // Send the PHP server’s response back to the browser
     res.status(response.status).send(text);
   } catch (err) {
     console.error(err);
